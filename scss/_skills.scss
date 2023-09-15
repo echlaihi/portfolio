@@ -1,0 +1,29 @@
+#skills{
+    h1{
+        padding: 1em;
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+        display: block;
+        padding: 1em;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        border: 1px solid green;
+        margin: .2rem;
+        border: 1px solid $dark_gray;
+        border-radius: .3rem;
+
+        &:hover{
+            background-color: $dark_gray;
+            color: $main_gray;
+            transition: color, background-color .3s ease;
+            cursor: pointer;
+        }
+    }
+}

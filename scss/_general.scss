@@ -1,0 +1,25 @@
+.wrapper{
+    max-width: 1090px;
+    height: 100%;
+    width: 100%;
+    padding: 0 .5em;
+    margin: auto;
+}
+html{
+    font-size: 16px;
+}
+
+h1{
+    margin-top: 3rem;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+        color: $dark_gray;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}

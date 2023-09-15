@@ -1,0 +1,98 @@
+#info-section{
+    background-color: $main_gray;
+    width: 100%;
+    max-width: 100%;
+    color: $dark_gray;
+
+
+    .wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        @include tablet{
+            padding: 0;
+        }
+    
+    }
+}
+
+
+img{
+    width: 43.5%;
+    @include tablet{
+        width: 100%;
+        height: auto;
+    }
+ 
+}
+
+.text{
+    width: 56.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    @include tablet {
+        width: 100%;
+        font-size: .8rem;
+    }
+
+    @include mobile{
+        font-size: .6rem;
+    }
+
+    
+    
+    #heading{
+        padding: 1.5em;
+        text-transform: uppercase;
+        font-size: .6em;
+        }
+    h1{
+        padding: .4em 0;
+        font-size: 3.5em;
+    }
+    
+    h3{
+        font-size: 2em;
+    }
+    
+    
+        #contact-info{
+            width: 100%;
+            padding: 1.6em;
+            >div{
+                display: flex;
+                text-align: left;
+                font-size: 1.1em;
+                padding-top: .7em;
+
+                
+                >*{
+
+                    @include tablet{
+                        font-size: .9em;
+                        letter-spacing: 2px;
+                    }
+                    @include mobile{
+                        font-size: .9em;
+                        letter-spacing: 1px;
+                        font-weight: bold;
+                    }
+                }
+                i{
+                    font-size: 1.2em; 
+                    padding: .2em;
+                  
+                    
+                    &.fa-github{
+                        font-size: 1.4em;
+                    }
+                }
+
+            }
+        }
+
+
+}
