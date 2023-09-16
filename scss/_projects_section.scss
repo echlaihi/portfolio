@@ -8,14 +8,11 @@
             justify-content: space-around;
 
             .project{
-                width: 30%;
+                width: 40%;
                 margin: .4rem;
+                height: fit-content;
 
                 @include tablet{
-                    width: 46%;
-                }
-
-                @include mobile{
                     width: 98%;
                 }
                 border: 1px solid $dark_gray;
@@ -23,8 +20,7 @@
 
                 .project-img{
                     width: 100%;
-                    background-color: $dark_gray;
-                    height: 12rem;
+                    height: auto;
                     
                 }
 
@@ -37,9 +33,29 @@
                 .project-description{
                     text-align: center;
                     font-size: .9rem;
-                    padding: .8rem
+                    padding: .8rem;
+                    line-height: 1.5em;
                 }
 
+                .project-button{
+                    display: inline-block;
+                    background-color: $main_blue;
+                    color: darken($color: $dark_gray, $amount: 15);
+                    padding: .5em;
+                    font-size: inherit;
+                    margin-right: auto;
+                    margin: .4em;
+                    border-radius: .2em;
+                    // color: black;
+                    font-weight: bold;
+
+                }
+
+                button.project-button{
+                    background-color: $main_green;
+                    border: none;
+                }
+               
                 ul{
                     display: flex;
                     flex-wrap: wrap;
