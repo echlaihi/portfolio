@@ -74,6 +74,9 @@ aside {
     background-color: #91979c;
     transform: translateX(-40em);
     transition: transform 1s ease; }
+    @media screen and (max-width: 900px) {
+      aside ul {
+        width: 100%; } }
     aside ul.active {
       transform: translateY(0);
       transition: transform 1s ease; }
