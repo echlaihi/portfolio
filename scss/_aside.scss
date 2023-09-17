@@ -44,16 +44,16 @@ aside{
     ul{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 53.5%;
 
         @include tablet{
             width: 100%;
         }
-        
+
         height: 100%;
         position: absolute;
         background-color: lighten($color: $dark_gray, $amount: 30);
-        transform: translateX(-40em);
+        transform: translateX(-50em);
         transition: transform 1s ease;
         
         &.active{
