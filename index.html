@@ -9,21 +9,20 @@
 </head>
 <body>
 
+	<div id="icon-toggler">
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
 	<aside>
-		<nav>
-			<div id="icon-toggler">
-					<span></span>
-					<span></span>
-					<span></span>
-			</div>
-			<ul id="menu">
-				<li><a href="#info">INFO</a></li>
-				<li><a href="#skills">SKILLS</a></li>
-				<li><a href="#projects">PROJECTS</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-			</ul>
-		</nav>
+		<ul id="menu">
+			<li><a href="#info">INFO</a></li>
+			<li><a href="#skills">SKILLS</a></li>
+			<li><a href="#projects">PROJECTS</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
 	</aside>
+	
 
 	<section id="info"><!--info-section =====================================================-->
 			
@@ -167,18 +166,20 @@
 
 	<script>
 		var button = document.getElementById("icon-toggler");
-		var menu = document.getElementById("menu");
-		var links = document.querySelectorAll("nav a");
+		var aside = document.querySelector("aside");
+		var links = document.querySelectorAll("aside ul a");
 
 
 		Array.from(links).forEach(function (link){
 			link.addEventListener("click", function (){
-				menu.classList.toggle("active");
+				aside.classList.toggle("active");
 			})
 		});
 
 		button.addEventListener("click", function () {
-			menu.classList.toggle("active");
+			aside.classList.toggle("active");
+			console.log("button clicked");
+
 			button.classList.toggle("active");
 		})
 	</script>
