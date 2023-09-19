@@ -52,6 +52,7 @@ aside {
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     position: absolute; }
     aside ul.active {
       transform: translateY(0);
