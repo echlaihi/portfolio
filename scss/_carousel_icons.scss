@@ -1,0 +1,46 @@
+#next-container, #previous-container{
+    box-sizing: content-box;
+    width: 2rem;
+    height: 4rem;
+    padding: 1rem;
+    border-width: 1px solid $main_gray;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 47%;
+    background-color: $dark_gray;
+    border-radius: .2rem;
+    z-index: 99;
+    transform: scale(.8);
+    span{
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: auto;
+        border-top: .2rem solid $main_gray;
+        border-radius: .1rem;
+    }
+
+    &:hover{
+        background-color: $secondary_dark_gray;
+    }
+
+}
+
+#previous-container{
+    left: 0;
+    span{
+        border-left: .2rem solid $main_gray;
+        transform: rotateZ(-45deg);
+        box-sizing: content-box;
+
+    }
+}
+#next-container{
+    right: 0;
+    span{
+        border-right: .2rem solid $main_gray;
+        transform: rotateZ(45deg);
+    }
+}

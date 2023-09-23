@@ -1,22 +1,36 @@
 #projects{
     
-    .wrapper{
+    position: relative;
+        .projects-carousel{
+            width: 100%;
 
-        .projects{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            overflow-y: scroll;
 
+            .projects-wrapper{
+                display: flex;
+                width: fit-content;
+                height: 100%;
+                margin: .9rem 0;
+            }
+          
             .project{
-                width: 40%;
-                margin: .4rem;
-                height: fit-content;
+                cursor: pointer;
+                min-width: 20rem;
+                margin: .3rem;
+                transition: background-color, transform .3s ease;
+                background-color: $main_gray;
+                border: none;
+
+                &:hover{
+                    transform: scale(1.02);
+                    background-color: $waite;
+                }
 
                 @include tablet{
                     width: 98%;
                 }
-                border: 1px solid $dark_gray;
-                border-radius: .5rem;
+                border: 1px solid $secondary_main_gray;
+                border-radius: .1rem;
 
                 .project-img{
                     width: 100%;
@@ -80,5 +94,5 @@
                 }
             }
         }
-    }
+
 }

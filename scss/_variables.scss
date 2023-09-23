@@ -3,3 +3,5 @@ $dark_gray: #464a4e;
 $waite: #fff;
 $main_blue: #6262e2;
 $main_green: rgb(46, 150, 5);
+$secondary_dark_gray: darken($color: $dark_gray, $amount: 10);
+$secondary_main_gray: darken($color: $waite, $amount: 19);
