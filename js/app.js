@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+    /**************
+     *  Carousel **
+     *************/
     // Method 1: 
     
     var projectsWrapper, btnNext, btnPrevious, cardWidth, count = 0;
@@ -52,6 +55,47 @@ $(document).ready(function(){
 // // console.log("carousel container", carouselContainer);
 // var carouselPosition = $(carouselContainer).scrollLeft();
 // console.log(carouselPosition);
+
+
+/*************
+ *  Header ***
+ ************/
+
+var header = $("header");
+var body = $("body");
+$(window).scroll(function(){
+   if ( window.scrollY > window.innerHeight )
+   {
+        $(header).css({
+            position: "fixed",
+            width: "100%",
+            zIndex: "1001",
+            top: "0",
+        });
+        
+   } else  {
+    $(header).css({
+        position: "static",
+    });
+   }
+});
+
+
+
+
+
+/*************
+ *  Nav ******
+ * **********/
+
+var nav, toggler;
+
+toggler = $("#icon-toggler");
+nav = $("nav");
+toggler.click(function(){
+    $(nav).toggleClass("active");
+    console.log("hello worls");
+});
 
 
 
