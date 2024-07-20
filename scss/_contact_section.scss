@@ -1,0 +1,48 @@
+#contact{
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    fieldset{
+        border: none;
+        width: 60%;
+        min-width: 20rem;
+
+        @include tablet{
+            min-width: 80%;
+        }
+        @include mobile{
+           min-width: 100%;
+        }
+        margin: 1rem auto;
+        label{
+            font-weight: bold;
+            display: block;
+            padding: .5rem;
+        }
+
+        input, textarea, button{
+            border: none;
+            width:  100%;
+            padding: 1rem;
+            border-radius: .4rem;
+            background-color: $main_gray;
+
+        }
+
+        textarea{
+            line-height: 1.7rem;
+        }
+
+        button{
+            font-weight: bold;
+            &:hover{
+                background-color: $dark_gray;
+                color: $main_gray;
+                transition: color, background-color .2s ease;
+            }
+        }
+    }
+}
